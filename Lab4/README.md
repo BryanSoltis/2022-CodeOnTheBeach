@@ -85,7 +85,7 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 		- Workspace URL
 			- **2022codeonthe-iww8795* 
 		- Channel Name
-			- **demo**
+			- **general**
 		- Message Text
 			- "The following text has been processed: **
 			- Dynamic content
@@ -116,5 +116,6 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 	- Open Slack to the **2022CodeOnTheBeachAzureLogicAppWorkShop** team
 	- View the **demo** channel
 		- Confirm the message is displayed
-		- ![image](https://user-images.githubusercontent.com/13591910/177866011-2849acec-c82e-49d2-a175-9d1a93246cbd.png)
+		- ![image](https://user-images.githubusercontent.com/13591910/177866494-e711ed83-54b5-49f3-b750-2dd379295e7b.png)
+
 
