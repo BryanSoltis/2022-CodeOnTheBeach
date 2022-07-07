@@ -1,7 +1,7 @@
-# Lab 4 - Call an Azure Function and Post to Teams/Slack
+# Lab 4 - Call an Azure Function and Post to Slack
 
 ## Overview
-This lab will create an Azure Logic App to create an Azure Containers Instance on a schedule. This lab demonstrates scheduler functionality, the Azure Container Instances connector, and the Control connector. 
+This lab will create an Azure Logic App that processed text using an Azure Function. After processing, the workflow will post a message to a Slack chnnel. 
 
 ## Instructions
 1. Create an Azure Function
