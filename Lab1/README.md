@@ -52,8 +52,8 @@ This lab will create an Azure Logic App to handle HTTP requests with JSON payloa
 
 	- Select **+ New step**
 	- Search for **Variables**
-	- Select **Variables**
-	- Select **Initialize variable**
+	- Select **Variables** connector
+	- Select **Initialize variable** action
 		- Name:
 		  - **isalive**
 		- Type: 
@@ -67,8 +67,8 @@ This lab will create an Azure Logic App to handle HTTP requests with JSON payloa
 			  - **Set isalive variable**
 	- Sekect **+ New step**
 	- Search for **Control**
-	- Select **Control**
-	- Select **Condition**
+	- Select **Control** connector
+	- Select **Condition** action
 		- Choose a value
 			- Dynamic content
 				- Variables
@@ -77,8 +77,9 @@ This lab will create an Azure Logic App to handle HTTP requests with JSON payloa
 		- Choose a value
 		  - **True**
 	- Under True
-		- Search for **Response**
-		- Select **Response**
+		- Search for **Request**
+		- Select **Request** connector
+		- Select **Response** action
 		- Under Body
 			- Enter the following text
 				- **Long live** 
