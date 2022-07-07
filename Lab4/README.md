@@ -37,6 +37,7 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
   - Download the **Lab4DemoFunctions** project
   - Publish to Azure Function using Visual Studio
   - Confirm DataManiulator400Function is displayed
+  - ![image](https://user-images.githubusercontent.com/13591910/177861571-235dac94-09d7-4619-933e-2fec851285dd.png)
 
 3. Create an Azure Logic App
 	- Select **Create a Resource** (left navigation menu)
@@ -62,158 +63,58 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 		- Select **Review & Create**
 		- Select **Create**
 	- Select **Go to resource**
-	- Select the **HTTP Request** trigger 
+	- Select the **When a HTTP request is received** trigger 
+	- Select **Use a sample payload to generate schema**
+    	```json
+      		{
+			  "originaltext":"something cool"
+		}
+    	```
 	- Select **+ New step**
-	- Search for **Initialize**
-	- Select **Variables** connector
-	- Select **Initialize variable** action
-		- Name
-			- **containergroupname**
-		- Type
-			- **string**
-		- Value:
-			- Expression
-				- **concat('codeonthebeachgroup', rand(0,100))**
-		- Select the ellipses and choose **Rename**
-			- Enter the following text for the name
-			- **Set container group name**
-	- Select **+ New step**
-	- Search for **Variables**
-	- Select **Variables** connector
-	- Select **Initialize variable** action
-		- Name
-			- **containername**
-		- Type
-			- **string**
-		- Value
-			- Expression
-				- **concat('codeonthebeachcontainer', rand(0,100))**
-		- Select the ellipses and choose **Rename**
-			- Enter the following text for the name
-				- **Set container name**
-	- Select **+ New step**
-	- Search for **Variables**
-	- Select **Variables** connector
-	- Select **Initialize variable** action
-		- Name
-			- **results**
-		- Type
-			- **string**
-		- Select the ellipses and choose **Rename**
-			- Enter the following text for the name
-				- **Initialize results**
-	- Select **+ New step**
-	- Search for **Azure Container Instance**
-	- Select **Azure Container Instance** connector
-	- Select **Create or update a container group** action
-	- Authenticate to the Azure Subscription
-	- Enter the following values:
-		- Subscription Id
-			- **[Your subscription id]**
-		- Resource Group
-			- **[Your resource group name]**
-		- Container Group Name
-			- Dynamic Content
-				- Variables
-					- **containergroupname**
-		- Container Group Location
-			- **eastus**
-		- Container Name - 1
-			- Dynamic Content
-				- Variables
-					- **containername**
-		- Container Image - 1
-			- **hello-world:latest**
-		- Container Resource Requests Memory - 1
-			- **3.5**
-		- Container Resource Requests CPU - 1
-			- **1**
-		- ![image](https://user-images.githubusercontent.com/13591910/177854356-f39dc843-65e9-4732-84e9-c6fdde4f0fb7.png)
-		- Select **Add new parameter** (at the bottom)
-		- Select **ContainerGroup Image Registries**
-		- ![image](https://user-images.githubusercontent.com/13591910/177854561-bf0b5d6d-f292-45ac-b678-cd0f553bf7be.png)
-		- Click off the modal
-		- Enter the following values:
-			- Image Registry Server - 1
-				- **bsoltiscotbdemocr.azurecr.io**
-			- Image Registry User - 1
-				- **bsoltiscotbdemocr**
-			- Image Registry Password - 1
-				- **XXA3mdEtBs7D9ZNDWzUsurBbguw+PC=t**
-			- ![image](https://user-images.githubusercontent.com/13591910/177855306-02abd202-6cfe-4961-8cfa-4eeb8bc447bc.png)
-	- Select **+ New Step**
-	- Search for **Schedule**
-	- Select **Schedule** connector
-	- Select **Delay" action
-		- Count
-			- **30**
-		- Unit
-			- **Seconds**
-	- Select **+ New step**
-	- Search for **Azure Container Instance**
-	- Select **Azure Container Instance** connector
-	- Select **Get logs from a container instance** action
-	- Authenticate to the Azure Subscription
-	- Enter the following values:
-		- Subscription Id
-			- **[Your subscription id]**
-		- Resource Group
-			- **[Your resource group name]**
-		- Container Group Name
-			- Dynamic Content
-				- Variables
-					- **containergroupname**
-		- Container Name
-			- Dynamic Content
-				- Variables
-					- **containername**
-	- Select **+ New step**
-	- Search for **Variables**
-	- Select **Variables** connector
-	- Select **Set variable** action
-		- Name
+	- Search for **Azure Functions**
+	- Select **Azure Functions** connector
+	- Select your Azure Function
+	- Select **DataManipulator400Funcion**
+		- Request Body
 			- Dynamic content
-				- Variables
-					- **results**
-		- Value
+				- **originaltext** (under the **When a HTTP request is received** action)
+	- Sekect **+ New step**
+	- Search for **Slack**
+	- Select **Slack** connector
+	- Select **Post a message (V2)** action
+		- Workspace URL
+			- **2022codeonthe-iww8795* 
+		- Channel Name
+			- **demo**
+		- Message Text
+			- "The following text has been processed: **
 			- Dynamic content
-				- **content** (under the **Get logs from a container instance** action)					
-		- Select the ellipses and choose **Rename**
-		- Enter the following text for the name
-			- **Set results variable**
-	- Select **+ New step**
-	- Search for **Azure Container Instance**
-	- Select **Azure Container Instance** connector
-	- Select **Delete a container group** action
-	- Authenticate to the Azure Subscription
-	- Enter the following values:
-		- Subscription Id
-			- **[Your subscription id]**
-		- Resource Group
-			- **[Your resource group name]**
-		- Container Group Name
-			- Dynamic Content
-				- Variables
-					- **containergroupname**
+			- 	- **Body** (under **DataManiuplator4000Function** action)
 
 4. Review
 	- Completed workflow
-	![image](https://user-images.githubusercontent.com/13591910/177855569-748497b4-5cec-48d1-a8fd-0d19dde8f411.png)
+	![image](https://user-images.githubusercontent.com/13591910/177865459-508f3b15-82a4-4140-a1de-b4d090338656.png)
 
 
 5. Testing
 	- Select **Overview** (left navigation menu)
 	- Select **Run trigger**
+	- Select **Run with payload**
+	- Entewr the following values
+		- Body
+		```json
+      		{
+			  "originaltext":"Code on the Beach has the best afterparties!"
+		}
+		```
 	- On the **Overview** tab, click **Refresh**
 	- Under **Runs history**, select the top record
 	- Review the run details
-	- Expand the **Set container group name** action
-		- Reviewed the variable value
-		- ![image](https://user-images.githubusercontent.com/13591910/177855687-2e3400af-4f04-4a56-89ad-c926138bde5b.png)
-	- Expand the **Create or update a container group** action
-		- Review the data
-	- Expand the **Get logs from a container instance** action
-		- Review the output data
-		![image](https://user-images.githubusercontent.com/13591910/177855825-c54a1ad1-1efe-443e-b12e-7e79ff8c5343.png)
-	- Expand the **Set results** variable action
-		- Review the data
+	- Expand the **DataManipulator400Function** action
+		- Reviewed the **OUTPUTS** data
+		- ![image](https://user-images.githubusercontent.com/13591910/177865787-a845ab34-96c1-4bee-8844-2213935ba7e4.png)
+	- Open Slack to the **2022CodeOnTheBeachAzureLogicAppWorkShop** team
+	- View the **demo** channel
+		- Confirm the message is displayed
+		- ![image](https://user-images.githubusercontent.com/13591910/177866011-2849acec-c82e-49d2-a175-9d1a93246cbd.png)
+
