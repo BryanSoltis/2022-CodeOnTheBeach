@@ -1,13 +1,13 @@
-#Lab 1- Convert Azure Storage Blob JSON to CSV![image](https://user-images.githubusercontent.com/13591910/177837567-da8bd6d5-b577-4e57-ae16-de90bc356141.png)
+#Lab 1- Convert Azure Storage Blob JSON to CSV
 
 ## Overview
 This lab will create an Azure Logic App to process JSON files uploaded to an Azure Blob Storage account. The workflow will convert the JSON to CSV and save it as a new file within Azure Blob Storage. 
 
 ## Insutrctions
-Create an Azure Storage Account
-Select Create a Resource (left navigation menu)
-Search for Storage
-Select Storage Account
+1. Create an Azure Storage Account
+	- Select Create a Resource (left navigation menu)
+	- Search for Storage
+	- Select Storage Account
 Select Create
 Subscription
 Choose desired subscription
