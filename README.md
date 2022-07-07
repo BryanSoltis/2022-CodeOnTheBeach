@@ -6,3 +6,5 @@ This repository contains details, labs, and source code for the 2022 Code ON The
 ## [Lab 2 - Convert Azure Blob Storage JSON to CSV](Lab2)
 
 ## [Lab 3 - Deploy a container on a schedule](Lab3)
+
+## [Lab 4 - Call an Azure Function and Post to Slack](Lab4)
