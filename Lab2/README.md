@@ -196,6 +196,7 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 		- Review the **Blob name**
 	- Expand the **Set results variable** action
 		- Review the data
+	- ![image](https://user-images.githubusercontent.com/13591910/177849986-b26aa603-2aad-4564-9827-0c12fc4f0c04.png)
 	- In a new tab, select your **Azure Storage Account**
 	- Select **Containers** (left navigation menu)
 	- Select **files**
