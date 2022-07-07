@@ -35,13 +35,14 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 			- **processedfiles**
 		- Public access level
 			- **Private (no anonymous access)**
+	- ![image](https://user-images.githubusercontent.com/13591910/177843837-19b5d465-0d38-49d0-9f00-b3228ab4d524.png)
 	- Select **Access keys** (left navigation menu)
 	- Select **Show keys** (top navigation menu)
 	- Copy the following values (for later use)
 		- **Storage account name**
-			- bsoltiscotbdemosa
 		- **Key1 / Key**
-			- JDYWIvg7HckWKKQ+KN+TZ/CPdIEtbM7Tj4vPJA8iuzhOsrnEfXUExbxTEDON4uYmRIMlHe2gb0NJ+AStNBUnQg==
+	- ![image](https://user-images.githubusercontent.com/13591910/177843985-1a965c69-27b3-46bc-aae2-c45b5f4f53c9.png)
+
 			
 2. Create an Azure Logic App
 	- In a new tab, Select **Create a Resource** (left navigation menu)
@@ -108,6 +109,8 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 			- Select **json**
 			- Click Dynamic Content
 				- **File Content** (under the Get blob content V2 action)
+				![image](https://user-images.githubusercontent.com/13591910/177842718-1c86ceb4-e8d3-4533-bd8a-d20b7834281b.png)
+
 		- Schema
 		 ```json
 			{
@@ -150,6 +153,7 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 			- Expression
 				- **utcNow()**
 			- **.csv**
+			- ![image](https://user-images.githubusercontent.com/13591910/177842824-c0462af0-13fa-4099-9092-6aa504d07392.png)
 		- Blob content
 			- Dynamic content
 				- **Output** (under Create CSV table action)
@@ -164,7 +168,12 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 			- Dynamic content
 				- **List of Files Path** (under When a blob is added or modified… action)
 
-4. Testing
+4.  Review
+	- Completed workflow
+	- ![image](https://user-images.githubusercontent.com/13591910/177843401-3ae9ec34-bff2-4fdb-aefc-8883c1c700de.png)
+
+
+5. Testing
 	- Download the demo file from the following link
 	- [link]
 	- Select your Azure Storage Account
