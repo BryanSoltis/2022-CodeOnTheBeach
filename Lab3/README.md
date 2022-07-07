@@ -98,8 +98,10 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 			- **3.5**
 		- Container Resource Requests CPU - 1
 			- **1**
+		- ![image](https://user-images.githubusercontent.com/13591910/177854356-f39dc843-65e9-4732-84e9-c6fdde4f0fb7.png)
 		- Select **Add new parameter** (at the bottom)
 		- Select **ContainerGroup Image Registries**
+		- ![image](https://user-images.githubusercontent.com/13591910/177854561-bf0b5d6d-f292-45ac-b678-cd0f553bf7be.png)
 		- Click off the modal
 		- Enter the following values:
 			- Image Registry Server - 1
@@ -108,9 +110,10 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 				- **bsoltiscotbdemocr**
 			- Image Registry Password - 1
 				- **XXA3mdEtBs7D9ZNDWzUsurBbguw+PC=t**
+			- ![image](https://user-images.githubusercontent.com/13591910/177855306-02abd202-6cfe-4961-8cfa-4eeb8bc447bc.png)
 	- Select **+ New Step**
 	- Search for **Schedule**
-	- Select **Schedule** connectory
+	- Select **Schedule** connector
 	- Select **Delay" action
 		- Count
 			- **30**
@@ -163,7 +166,12 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 				- Variables
 					- **containergroupname**
 
-4. Testing
+4. Review
+	- Completed workflow
+	![image](https://user-images.githubusercontent.com/13591910/177855569-748497b4-5cec-48d1-a8fd-0d19dde8f411.png)
+
+
+5. Testing
 	- Select **Overview** (left navigation menu)
 	- Select **Run trigger**
 	- On the **Overview** tab, click **Refresh**
@@ -171,14 +179,17 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 	- Review the run details
 	- Expand the **Set container group name** action
 		- Reviewed the variable value
+		- ![image](https://user-images.githubusercontent.com/13591910/177855687-2e3400af-4f04-4a56-89ad-c926138bde5b.png)
 	- Expand the **Create or update a container group** action
 		- Review the data
 	- Expand the **Get logs from a container instance** action
 		- Review the output data
+		![image](https://user-images.githubusercontent.com/13591910/177855825-c54a1ad1-1efe-443e-b12e-7e79ff8c5343.png)
 	- Expand the **Set results** variable action
 		- Review the data
-	- Expand the **True** action
-		- Review the data
 	
-Learn More
-Deploying an image from Azure Container Registry with Azure Logic Apps - Soltisweb
+## Learn More
+
+[Deploying an image from Azure Container Registry with Azure Logic Apps](https://soltisweb.com/blog/detail/2021-09-01-deployinganimagefromazurecontainerregistrytoazurelogicapps)
+
+[ACI Logic Apps Integration](https://github.com/Azure-Samples/aci-logicapps-integration)
