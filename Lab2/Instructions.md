@@ -175,7 +175,7 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 
 5. Testing
 	- Download the demo file from the following link
-	- [Lab2DemoFile](lab2/lab2demofile.json)
+		- [Lab2DemoFile](lab2demofile.json)
 	- Select your Azure Storage Account
 	- Select **Containers** (left navigation menu)
 	- Select **files**
