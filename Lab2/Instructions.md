@@ -22,7 +22,7 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 		- Redundancy
 			- **Locally-redundant storage (LRS)**
 		- Select **Review & Create**
-	-	 Select **Create**
+		- Select **Create**
 	- Select **Go to resource**
 	- Select **Containers** (left navigation menu)
 	- Select **+ Container** (top navigation menu)
@@ -132,66 +132,66 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 	- Click **+ New step**
 	- Search for **Data Operations**
 	- Select **Data Operations
-	- Select Create CSV table
+	- Select **Create CSV table**
 	- Enter the following values:
 		- From
 			- Dynamic content
-			- Body (under Parse JSON action)
-	- Click + New step
-	- Search for Azure Blob Storage
-	- Select Azure Blob Storage
-	- Select Create blob (V2)
+			- **Body** (under Parse JSON action)
+	- Click **+ New step**
+	- Search for **Azure Blob Storage**
+	- Select **Azure Blob Storage**
+	- Select **Create blob (V2)**
 	- Enter the following values
 		- Storage account name
-			- Use connection settings ([your storage account name])
+			- **Use connection settings ([your storage account name])**
 		- Folder path
-			- processed
+			- **processed**
 		- Blob name
 			- Expression
-				- utcNow()
-			- .csv
+				- **utcNow()**
+			- **.csv**
 		- Blob content
 			- Dynamic content
-				- Output (under Create CSV table action)
-	- Click + New step
-	- Search for Azure Blob Storage
-	- Select Azure Blob Storage
-	- Select Delete blob (V2)
+				- **Output** (under Create CSV table action)
+	- Click **+ New step**
+	- Search for **Azure Blob Storage**
+	- Select **Azure Blob Storage**
+	- Select **Delete blob (V2)**
 	- Enter the following values
 		- Storage account name
-			- Use connection settings ([your storage account name])
+			- **Use connection settings ([your storage account name])**
 		- Blob
 			- Dynamic content
-				- List of Files Path (under When a blob is added or modified… action)
+				- **List of Files Path** (under When a blob is added or modified… action)
 
 4. Testing
 	- Download the demo file from the following link
 	- [link]
 	- Select your Azure Storage Account
-	- Select Containers (left navigation menu)
-	- Select files
-	- Select Upload
+	- Select **Containers** (left navigation menu)
+	- Select **files**
+	- Select **Upload**
 	- Select the downloaded demo file
-	- Select Upload
-	- In a new tab, select you Azure Logic App
-	- Select Overview (left navigation menu)
-	- Select Run trigger
-	- On the Overview tab, click Refresh
-	- Under Runs history, select the top record
+	- Select **Upload**
+	- In a new tab, select you **Azure Logic App**
+	- Select **Overview** (left navigation menu)
+	- Select **Run trigger**
+	- On the **Overview** tab, click **Refresh**
+	- Under **Runs history**, select the top record
 	- Review the run details
-	- Expand the Parse JSON action
-		- Review the Content/Schema values
-	- Expand the Create CSV table action
-		- Review the OUTPUTS data
-	- Expand the Create blob (V2) action
-		- Review the Blob name
-	- Expand the Set results variable action
+	- Expand the **Parse JSON** action
+		- Review the **Content/Schema** values
+	- Expand the **Create CSV table** action
+		- Review the **OUTPUTS** data
+	- Expand the **Create blob (V2)** action
+		- Review the **Blob name**
+	- Expand the **Set results variable** action
 		- Review the data
-	- In a new tab, select you Azure Storage Account
-	- Select Containers (left navigation menu)
-	- Select files
+	- In a new tab, select your **Azure Storage Account**
+	- Select **Containers** (left navigation menu)
+	- Select **files**
 		- Confirm the demo file is deleted
-	- Select Containers (left navigation menu)
-	- Select processed
+	- Select **Containers** (left navigation menu)
+	- Select **processed**
 		- Confirm the new file is uploaded
 	- Download/view the file to confirm the contents
