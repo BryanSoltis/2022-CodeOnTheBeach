@@ -72,8 +72,8 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 3. Design workflow
 	- Select **Blank Logic App** (listed under Templates)
 	- Search for **Azure Blob Storage**
-	- Select **Azure Blob Storage**
-	- Select **When a blob is added or modified**
+	- Select **Azure Blob Storage** connector
+	- Select **When a blob is added or modified** action
 	- Enter the following values
 		- Connection name
 			- **COTB connection**
@@ -91,8 +91,8 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 			- **files**
 	- Click **+ New** step
 	- Search for **Azure Blob Storage**
-	- Select **Azure Blob Storage**
-	- Select **Get blob content (V2)**
+	- Select **Azure Blob Storage** connector
+	- Select **Get blob content (V2)** action
 	- Enter the following values
 		- Storage account name
 			- **Use connection settings ([your storage account name])**
@@ -101,8 +101,8 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 				- **List of Files Path** (under When a blob is added or modified… action)
 	- Click **+ New step**
 	- Search for **Data Operations**
-	- Select **Data Operations**
-	- Select **Parse JSON**
+	- Select **Data Operations** connector
+	- Select **Parse JSON** action
 	- Enter the following values
 		- Content
 			- Select **Expressions*
@@ -134,16 +134,16 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 		 ```
 	- Click **+ New step**
 	- Search for **Data Operations**
-	- Select **Data Operations
-	- Select **Create CSV table**
+	- Select **Data Operations** connector
+	- Select **Create CSV table** action
 	- Enter the following values:
 		- From
 			- Dynamic content
 			- **Body** (under Parse JSON action)
 	- Click **+ New step**
 	- Search for **Azure Blob Storage**
-	- Select **Azure Blob Storage**
-	- Select **Create blob (V2)**
+	- Select **Azure Blob Storage** connector
+	- Select **Create blob (V2)** action
 	- Enter the following values
 		- Storage account name
 			- **Use connection settings ([your storage account name])**
@@ -159,8 +159,8 @@ This lab will create an Azure Logic App to process JSON files uploaded to an Azu
 				- **Output** (under Create CSV table action)
 	- Click **+ New step**
 	- Search for **Azure Blob Storage**
-	- Select **Azure Blob Storage**
-	- Select **Delete blob (V2)**
+	- Select **Azure Blob Storage** connector
+	- Select **Delete blob (V2)** action
 	- Enter the following values
 		- Storage account name
 			- **Use connection settings ([your storage account name])**
