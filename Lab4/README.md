@@ -3,6 +3,13 @@
 ## Overview
 This lab will create an Azure Logic App that processed text using an Azure Function. After processing, the workflow will post a message to a Slack chnnel. 
 
+## Connectors/Actions
+- HTTP Requests
+- Variables
+- Azure Functions
+- Slack
+- Dynamic Content
+
 ## Instructions
 1. Create an Azure Function
 	- Select **Create a Resource** (left navigation menu)
