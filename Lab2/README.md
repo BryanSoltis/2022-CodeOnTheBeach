@@ -4,7 +4,7 @@
 This lab will create an Azure Logic App to process JSON files uploaded to an Azure Blob Storage account. The workflow will convert the JSON to CSV and save it as a new file within Azure Blob Storage. 
 
 ## Connectors/Actions
-- Schedule
+- Azure Blob Storage Triggers
 - Variables
 - Azure Blob Storage
 - Data Operations
