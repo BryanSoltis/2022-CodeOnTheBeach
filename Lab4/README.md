@@ -111,7 +111,7 @@ This lab will create an Azure Logic App that processed text using an Azure Funct
 		- Body
 		```json
       		{
-			  "originaltext":"Code on the Beach has the best afterparties!"
+			  "originaltext":"!SEITRAPRETFA TSEB EHT SAH HCAEb EHT NO EDOc"
 		}
 		```
 	- On the **Overview** tab, click **Refresh**
