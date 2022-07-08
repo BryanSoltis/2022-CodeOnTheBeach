@@ -3,6 +3,13 @@
 ## Overview
 This lab will create an Azure Logic App that processed text using an Azure Function. After processing, the workflow will post a message to a Slack chnnel. 
 
+## Details
+  - **Complex** level
+  - **Developer** audience
+  - Interaction with Azure FUnction
+  - Requires building/deploying an Azure Function (demo source code provided in lab)
+  - Data manipulation
+
 ## Connectors/Actions
 - HTTP Requests
 - Variables
