@@ -6,8 +6,8 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 ## DEtails
   - **Moderate** level
   - **Developer/Infrastructure** audience
-  - Requires deploying Azure Cotnainer Instances
-  - Requires an Azure Container REgistry (demo provided in lab)
+  - Requires deploying Azure Container Instances
+  - Requires an Azure Container Registry (demo provided in lab)
 
 ## Connectors/Actions
 - Schedule
