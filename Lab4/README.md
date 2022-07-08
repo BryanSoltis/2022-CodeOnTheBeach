@@ -6,7 +6,7 @@ This lab will create an Azure Logic App that processed text using an Azure Funct
 ## Details
   - **Complex** level
   - **Developer** audience
-  - Interaction with Azure FUnction
+  - Interaction with Azure Function
   - Requires building/deploying an Azure Function (demo source code provided in lab)
   - Data manipulation
 
