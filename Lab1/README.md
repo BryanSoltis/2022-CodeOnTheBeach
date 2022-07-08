@@ -3,6 +3,12 @@
 ## Overview
 This lab will create an Azure Logic App to handle HTTP requests with JSON payloads. The lab will demonstrate variable creation/assignment, as well as custom responses. 
 
+## Connectors/Actions
+- HTTP Requests
+- Variables
+- Responses
+- Dynamic Content
+
 ## Instructions
 1. Create an Azure Logic App
 	- Select **Create a Resource** (left navigation menu)
