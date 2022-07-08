@@ -78,7 +78,7 @@
 	  - Enter the following values
 	    - Choose a value (left side)
 	      - Dyanmic content
-	        -  **Action Performed" (under the **When a pull request is created or modified** action)
+	        -  **Action Performed** (under the **When a pull request is created or modified** action)
       - is equal to
       - Choose a value (right side)
         - **opened**
