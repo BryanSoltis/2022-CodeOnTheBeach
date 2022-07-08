@@ -3,6 +3,13 @@
 ## Overview
 This lab will create an Azure Logic App to create an Azure Containers Instance on a schedule. This lab demonstrates scheduler functionality, the Azure Container Instances connector, and the Control connector. 
 
+## Connectors/Actions
+- Schedule
+- Variables
+- Azure Container Instances
+- Dynamic Content
+- Expressions
+
 ## Instructions
 1. Create an Azure Logic App
 	- Select **Create a Resource** (left navigation menu)
