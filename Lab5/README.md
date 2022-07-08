@@ -1,6 +1,7 @@
 # Lab 5 - Automate GitHub Pull Request Merging with Azure Logic Apps
 
 ## Overview
+This lab demosntrates how to automate the merging of a GitHub PulL Reuwest using a workflow.
 
 ## Connectors/Action
 - GitHub
