@@ -4,8 +4,8 @@
 This lab will create an Azure Logic App to handle HTTP requests with JSON payloads. The lab will demonstrate variable creation/assignment, as well as custom responses. 
 
 ## Details
-- **Beginner** level
-- **General** audience
+- Level: **Beginner**
+- Audience: **General**
 - Easy to implement in any envinroment
 - Basic data handling
 
