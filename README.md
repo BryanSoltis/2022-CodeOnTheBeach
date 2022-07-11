@@ -20,7 +20,7 @@ This repository contains labs and source code for the 2022 Code On The Beach Azu
   - Requires an Azure Container Registry (demo provided in lab)
 
 ## [Lab 4 - Call an Azure Function and Post to Slack](Lab4)
-  - Level: **Complex**
+  - Level: **Advanced**
   - Audience: **Developer**
   - Interaction with Azure Function
   - Requires building/deploying an Azure Function (demo source code provided in lab)
