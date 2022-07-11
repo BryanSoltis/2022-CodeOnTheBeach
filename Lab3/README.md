@@ -4,8 +4,8 @@
 This lab will create an Azure Logic App to create an Azure Containers Instance on a schedule. This lab demonstrates scheduler functionality, the Azure Container Instances connector, and the Control connector. 
 
 ## DEtails
-  - **Moderate** level
-  - **Developer/Infrastructure** audience
+  - Level: **Moderate**
+  - Audience: **Developer, Infrastructure**
   - Requires deploying Azure Container Instances
   - Requires an Azure Container Registry (demo provided in lab)
 
