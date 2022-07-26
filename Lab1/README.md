@@ -69,7 +69,7 @@ This lab will create an Azure Logic App to handle HTTP requests with JSON payloa
 		- Name:
 		  - **isalive**
 		- Type: 
-		  - **bool**
+		  - **Boolean**
 		- Value:
 			- Dynamic content
 				- **When a HTTP request is received**
