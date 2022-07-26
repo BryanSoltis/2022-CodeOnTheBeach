@@ -87,7 +87,7 @@ This lab will create an Azure Logic App to handle HTTP requests with JSON payloa
 				-   **isalive**
 		- **Is equal to**
 		- Choose a value
-		  - **True**
+		  - **true**
 	- Under True
 		- Search for **Request**
 		- Select **Request** connector
