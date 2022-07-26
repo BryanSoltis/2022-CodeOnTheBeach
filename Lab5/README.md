@@ -6,8 +6,8 @@ This lab demosntrates how to automate the merging of a GitHub PulL Reuwest using
 ## Details
   - Level: **Moderate**
   - Audience: **General, Developer**
-  - Interaction with Slack team
-  - Requires Slack team (demo team provided in lab)
+  - Interaction with GitHub
+  - Requires GitHub project
 
 ## Connectors/Action
 - GitHub
