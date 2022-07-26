@@ -29,5 +29,5 @@ This repository contains labs and source code for the 2022 Code On The Beach Azu
 ## [Lab 5 - Automate GitHub Pull Request Merging with Azure Logic Apps](Lab5)
   - Level: **Moderate**
   - Audience: **General, Developer**
-  - Interaction with Slack team
-  - Requires Slack team (demo team provided in lab)
+  - Interaction with GitHub
+  - Requires GitHub project
