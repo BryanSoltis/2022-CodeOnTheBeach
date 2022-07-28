@@ -3,11 +3,12 @@
 ## Overview
 This lab will create an Azure Logic App to create an Azure Containers Instance on a schedule. This lab demonstrates scheduler functionality, the Azure Container Instances connector, and the Control connector. 
 
-## DEtails
+## Details
   - Level: **Moderate**
   - Audience: **Developer, Infrastructure**
   - Requires deploying Azure Container Instances
-  - Requires an Azure Container Registry (demo provided in lab)
+  - Requires an Azure Container Registry (See instructions in [Learn more](#learn-more) links below)
+  - REquires an image in your Azure Container Registry (See instructions in [Learn more](#learn-more) links below)
 
 ## Connectors/Actions
 - Schedule
@@ -118,11 +119,11 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 		- Click off the modal
 		- Enter the following values:
 			- Image Registry Server - 1
-				- **bsoltiscotbdemocr.azurecr.io**
+				- **[Your Azure Container Registry Name].azurecr.io**
 			- Image Registry User - 1
-				- **bsoltiscotbdemocr**
+				- **[Your Azure Container Registry Admin Login]**
 			- Image Registry Password - 1
-				- **XXA3mdEtBs7D9ZNDWzUsurBbguw+PC=t**
+				- **[Your Azure Container Registry Access Key]**
 			- ![image](https://user-images.githubusercontent.com/13591910/177855306-02abd202-6cfe-4961-8cfa-4eeb8bc447bc.png)
 	- Select **+ New Step**
 	- Search for **Schedule**
@@ -202,6 +203,10 @@ This lab will create an Azure Logic App to create an Azure Containers Instance o
 		- Review the data
 	
 ## Learn More
+
+[Quickstart: Create an Azure container registry using the Azure portal](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
+
+[Push your first image to your Azure container registry using the Docker CLI](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli)
 
 [Deploying an image from Azure Container Registry with Azure Logic Apps](https://soltisweb.com/blog/detail/2021-09-01-deployinganimagefromazurecontainerregistrytoazurelogicapps)
 
