@@ -1,7 +1,7 @@
 # Lab 4 - Call an Azure Function and Post to Slack
 
 ## Overview
-This lab will create an Azure Logic App that processed text using an Azure Function. After processing, the workflow will post a message to a Slack chnnel. 
+This lab will create an Azure Logic App that processes text using an Azure Function. After processing, the workflow will post a message to a Slack chnnel. 
 
 ## Details
   - Level: **Advanced**
